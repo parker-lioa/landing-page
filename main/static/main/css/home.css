@@ -1,0 +1,244 @@
+.header-board{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 56.5vw;
+  background-image: url("/static/main/img/board.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.board-content{
+  color: white;
+  font-size: 2.5rem;
+  padding-right:100px;
+}
+
+.container{
+  width: 100%;
+}
+
+.topic{
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  padding:40px 0 50px 0;
+}
+
+.about-container{
+  width: 75%;
+  margin: auto;
+  margin-bottom: 80px;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap: wrap;
+}
+
+.introduction{
+  display: block;
+  max-width: 450px;
+  font-size:2rem;
+  line-height: 3.5rem;
+  text-align:center;
+}
+
+.img{
+  background-image: url("/static/main/img/self_1.jpg");
+  background-size:cover;
+  background-position:left;
+  display: block;
+  height: 30vw;
+  width: 30vw;
+  border: 0;
+  border-radius:15vw;
+}
+
+#weed{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+}
+
+.weed-picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background-image: url("/static/main/img/weed_1.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.word-420{
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+
+.slogan{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#skill{
+  background-image: url("/static/main/img/skill.jpg");
+  background-size:cover;
+}
+
+.skill-container{
+  padding-bottom: 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 1fr;
+}
+
+.skill{
+  font-size:1.6rem;
+  color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#skill .topic{
+  color:#ffeaa7;
+}
+
+.skill-content{
+  width: 70%;
+  height: 100%;
+  background:rgba(119, 140, 163,0.6);
+  text-align: center;
+  transition: transform 450ms ;
+}
+
+.skill-content ul{
+  list-style: none;
+}
+
+.skill-content li{
+  margin-top:1rem;
+  margin-bottom: 1rem;
+}
+
+.skill-content h2{
+  margin-top: 2rem;
+}
+
+.skill-content:hover{
+  transform: scale(1.05);
+}
+
+#portfolio .topic{
+  font-size: 3.3rem;
+  padding-bottom: 28px;
+}
+
+.portfolio-container{
+  margin:0 0 50px 0;
+  width: 100%;
+}
+
+.work-container{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+  gap:20px;
+  grid-template-rows: 1fr;
+}
+
+.work-container a{
+  text-decoration: none;
+  color: black;
+}
+
+.work{
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work:hover{
+  box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+}
+
+.work-img{
+  border: 2px solid #dfe6e9;
+  margin-top: 40px;
+  width: 70%;
+  height:200px;
+  background: black;
+}
+
+.work-name{
+  margin:20px;
+  font-size:1.6rem;
+}
+
+#money-tracker{
+  background-image: url("/static/main/img/money-tracker.PNG");
+  background-size: cover;
+  background-position: center;
+}
+
+#jazz-chord-machine{
+  background-image: url("/static/main/img/jazz-chord-machine.PNG");
+  background-size: cover;
+  background-position: center;
+}
+
+#covid-19-tracker{
+  background-image:url("/static/main/img/covid-19-tracker.PNG");
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media screen and (max-width:768px){
+
+  .header-board{
+    height: 65vw;
+    justify-content: center;
+  }
+
+  .board-content{
+    padding: 0;
+    padding-top:30px;
+  }
+  .self-img{
+    margin-top: 5vh;
+  }
+
+  .img{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 25vw;
+  }
+
+  .skill-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+
+
+  .work{
+    width: 90vw;
+  }
+
+}
